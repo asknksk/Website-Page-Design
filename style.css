@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/****************** INDEX ******************/
 header {
   background-color: #35424a;
   border-bottom: 3px solid #9a5088;
@@ -26,8 +26,12 @@ ul li a {
 }
 h1 {
   font-size: 1.2rem;
+  padding-left: 1rem;
 }
 span {
+  color: #9a5088;
+}
+.selected-link {
   color: #9a5088;
 }
 nav ul li a:hover {
@@ -35,7 +39,7 @@ nav ul li a:hover {
   font-weight: 800;
 }
 main {
-  background-image: url(./img/showcase.jpg);
+  background-image: url(./assets/img/showcase.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -77,12 +81,13 @@ main p {
   margin-right: 0.2rem;
 }
 .btn {
-  background-color: orangered;
+  background-color: rgba(250, 43, 7, 0.89);
   border: none;
-  color: white;
+  color: rgba(255, 255, 255, 0.8);
   height: 50%;
-  margin-right: 0.5rem;
-  font-size: 1rem;
+  margin-right: 1rem;
+  font-size: 0.7rem;
+  width: 4rem;
 }
 .photos {
   display: flex;
@@ -133,4 +138,45 @@ main p {
 .index__footer img {
   height: 2rem;
   opacity: 0.8;
+}
+
+/*************** ABOUT **********************/
+.about__section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 68vh;
+  background-color: #eee;
+  padding: 1.5rem 2rem;
+}
+.about__section h2 {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 900;
+}
+.about__section p {
+  font-size: 0.8rem;
+  padding-bottom: 1rem;
+}
+.about__section--div-left {
+  width: 65%;
+}
+.about__section--div-left p ~ p {
+  background-color: #35424a;
+  color: rgba(255, 255, 255, 0.8);
+  padding-top: 0.9rem;
+  padding-left: 0.7rem;
+  padding-right: 0.4rem;
+}
+.about__section--div-right {
+  width: 30%;
+  background-color: #35424a;
+  height: 45%;
+  padding: 1rem 0.9rem;
+}
+.about__section--div-right p {
+  color: rgba(255, 255, 255, 0.8);
+}
+.about__section--div-right h2 {
+  color: white;
 }
