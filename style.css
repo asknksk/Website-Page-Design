@@ -89,6 +89,10 @@ main p {
   font-size: 0.7rem;
   width: 4rem;
 }
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
 .photos {
   display: flex;
   justify-content: center;
@@ -179,4 +183,61 @@ main p {
 }
 .about__section--div-right h2 {
   color: white;
+}
+/************* SERVICES  ********************/
+.services__section {
+  display: flex;
+  /* align-items: stretch; */
+  justify-content: space-between;
+  height: 68vh;
+  padding: 1rem 1rem 1rem 2rem;
+  background-color: #eee;
+}
+
+.services__section div h2 {
+  font-size: 1.5rem;
+}
+.services__section div p {
+  font-size: 1rem;
+  padding-top: 0.3rem;
+}
+.services__section--left {
+  width: 70%;
+  /* height: 100%; */
+}
+.services__section--left div {
+  padding: 0.8rem 0.5rem 0.5rem 0.7rem;
+  background-color: #d8d8d8ea;
+  margin: 0.2rem;
+}
+.services__section--left h2 {
+  padding-bottom: 0.4rem;
+}
+.services__section--right {
+  background-color: #35424a;
+  color: white;
+  padding: 1rem 0.7rem 0.5rem 0.7rem;
+  height: 70%;
+  width: 25%;
+}
+.services__section--right h2 {
+  padding-bottom: 1rem;
+}
+.services__section--right label {
+  line-height: 1.5rem;
+}
+.services__section--right input,
+textarea {
+  width: 90%;
+}
+.services__section--right .button-submit {
+  width: 4rem;
+  height: 2rem;
+  border: none;
+  background-color: rgba(250, 43, 7, 0.89);
+  color: white;
+}
+.services__section--right .button-submit:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
